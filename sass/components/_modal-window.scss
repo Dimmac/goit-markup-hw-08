@@ -1,0 +1,30 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: var(--hover-textcolor);
+  padding: 40px;
+}
+.close-btn {
+  transition-property: fill;
+  @extend %transition-order;
+  @extend %align;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  &:hover,
+  &:focus {
+    fill: var(--theme-textcolor);
+  }
+}

@@ -1,0 +1,36 @@
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+/* обнуление свойств кнопки */
+.button,
+.modal-btn,
+.modal-btn-portfolio {
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+/* обнуление свойств изображений */
+.img {
+  max-width: 100%;
+  height: auto;
+}

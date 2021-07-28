@@ -1,0 +1,32 @@
+.tasks {
+  text-align: center;
+  padding: 94px 0px;
+}
+.tasks-images {
+  display: flex;
+  margin-top: 50px;
+  margin-left: calc(-1 * var(--card-gap));
+  .tasks-images-item {
+    flex-basis: calc((100% / 3) - var(--card-gap));
+  }
+}
+.tasks-images-item {
+  position: relative;
+  margin-left: var(--card-gap);
+  .gap {
+    display: block;
+  }
+}
+.tasks-text {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-100%);
+  padding: 27px 27px;
+  background-color: var(--tasks-text-background);
+}
+.tasks-text-item {
+  @include font(700, 14px, 16px, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--hover-textcolor);
+}

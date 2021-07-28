@@ -1,0 +1,81 @@
+.footer-section {
+  padding: 60px 0px;
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--main-background-color);
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer-studio {
+  color: var(--hover-textcolor);
+}
+.address-list {
+  margin-top: 20px;
+  font-style: inherit;
+}
+.geoposition,
+.address-link {
+  @include font(400, 14px, 24px, 0.03em);
+}
+.geoposition {
+  transition-property: color;
+  @extend %transition-order;
+  color: var(--hover-textcolor);
+  &:hover,
+  &:focus {
+    color: var(--theme-textcolor);
+  }
+}
+.address-link {
+  transition-property: color;
+  @extend %transition-order;
+  color: var(--footer-contacts-textcolor);
+  &:hover,
+  &:focus {
+    color: var(--theme-textcolor);
+  }
+}
+.address-list-item {
+  margin-top: 9px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.join {
+  margin-left: 70px;
+}
+.join-title {
+  @include font(700, 14px, 16px, 0.03em);
+  text-transform: uppercase;
+  color: var(--hover-textcolor);
+}
+.social-list-footer {
+  display: flex;
+  margin-top: 20px;
+  & :not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-list-link-footer {
+  transition-property: background-color;
+  @extend %transition-order;
+  @extend %align;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--hover-textcolor);
+  &:hover,
+  &:focus {
+    background-color: var(--theme-textcolor);
+  }
+}

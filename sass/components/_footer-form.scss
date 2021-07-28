@@ -1,0 +1,48 @@
+.footer-form {
+  margin-left: auto;
+}
+.footer-form-head {
+  @include font(700, 14px, 16px, 0.03em);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--hover-textcolor);
+}
+.footer-form-input {
+  width: 358px;
+  padding: 15px 0px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--hover-textcolor);
+  background-color: inherit;
+  &::placeholder {
+    color: var(--footer-contacts-textcolor);
+  }
+}
+.footer-form-button {
+  transition-property: background-color;
+  @extend %transition-order;
+  @include font(700, 16px, 30px, 00.06em);
+  @extend %align;
+  text-align: center;
+  color: var(--hover-textcolor);
+  background-color: var(--theme-textcolor);
+  border-radius: 4px;
+  padding: 0 28px 0 29px;
+  margin-left: 12px;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.footer-form-wrapper {
+  display: flex;
+}
+.icon-footer-form {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/icon-send.svg);
+}

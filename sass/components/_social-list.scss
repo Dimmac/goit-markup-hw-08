@@ -1,0 +1,25 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.social-list-link {
+  transition-property: background-color, fill;
+  @extend %transition-order;
+  @extend %align;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--card-gap);
+  fill: var(--icon-symbol-color);
+  &:hover,
+  &:focus {
+    background-color: var(--theme-textcolor);
+    fill: var(--hover-textcolor);
+  }
+}
+.icon-social-link {
+  width: 20px;
+  height: 20px;
+}

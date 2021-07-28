@@ -1,0 +1,31 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  @include font(700, 36px, 42px, 0.03em);
+  text-align: center;
+  color: var(--title-textcolor);
+}
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.clients-list-link {
+  transition-property: fill, border-color;
+  @extend %transition-order;
+  @extend %align;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--icon-symbol-color);
+  &:hover,
+  &:focus {
+    fill: var(--theme-textcolor);
+    border-color: var(--theme-textcolor);
+  }
+}
