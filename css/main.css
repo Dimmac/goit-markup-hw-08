@@ -28,7 +28,7 @@
 .contacts,
 .nav-section_list,
 .nav-section,
-.menu .container, .methods_box, .clients-list-link, .social-list-link-footer {
+.menu .container, .clients-list-link, .social-list-link-footer {
   display: flex;
   align-items: center;
 }
@@ -78,6 +78,36 @@ ul {
 .img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 3px tomato solid;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    background-color: springgreen;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    background-color: #2b1cb8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    background-color: darkorange;
+  }
 }
 
 .social-list {
@@ -515,20 +545,54 @@ ul {
   }
 }
 
-.methods .container {
-  padding-right: 15px;
-  padding-left: 15px;
+.methods {
   margin-top: 60px;
-  border: 3px springgreen dashed;
 }
 
-.methods_item {
-  width: 100%;
+.methods_icon {
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .methods_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .methods_list {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .methods_item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .methods_item .methods_item {
+    flex-basis: calc(100% / 4 - var(--card-gap));
+    margin-left: var(--card-gap);
+  }
+}
+
+.methods_box {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: var(--command-section-background-color);
+  border-radius: 4px;
 }
 
 .methods_title {
   text-align: center;
-  margin: 0 auto;
+  margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -544,38 +608,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
-}
-
-.methods_icon {
-  width: 70px;
-  height: 70px;
-}
-
-.methods_box {
-  justify-content: center;
-  height: 120px;
-  margin-bottom: 30px;
-  background: var(--command-section-background-color);
-  border-radius: 4px;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    min-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    min-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    min-width: 1200px;
-    margin-top: 94px;
-  }
 }
 
 .tasks {
