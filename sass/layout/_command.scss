@@ -5,9 +5,11 @@
   .command-list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   .command-list-item {
-    width: calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 @media screen and (max-width: 767px) {
