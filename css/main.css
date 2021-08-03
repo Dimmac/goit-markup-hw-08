@@ -610,6 +610,12 @@ ul {
   color: var(--paragraph-textcolor);
 }
 
+@media screen and (max-width: 479px) {
+  .methods_text {
+    margin-bottom: 30px;
+  }
+}
+
 .tasks {
   text-align: center;
   padding: 94px 0px;
