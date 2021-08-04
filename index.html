@@ -24,7 +24,9 @@
                 </ul>
                 <button type="button" class="mobile-menu-button is-open"
                  data-modal-button
-                 aria-expanded="false">
+                 aria-expanded="false"
+                 aria-controls="content-menu"
+                 >
                     <svg
                     width="40"
                     height="40"
@@ -34,7 +36,7 @@
 
                     </svg>
                 </button>
-                <div class="content-menu">
+                <div class="content-menu" id="content-menu" data-menu>
                     Контент-меню
                 </div>
             </nav>
