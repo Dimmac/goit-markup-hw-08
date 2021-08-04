@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="menu">
+    <header class="menu">
         <div class="container">
             <nav class="nav-section">
                 <a class="nav-section_logo link" href="index.html"><span lang="en">Web</span><span lang="en"
@@ -22,9 +22,24 @@
                     <li class="nav-section_item"><a href="portfolio.html" class="nav-section_link link">Портфолио</a></li>
                     <li class="nav-section_item"><a href="" class="nav-section_link link">Контакты</a></li>
                 </ul>
-            </nav> -->
+                <button type="button" class="mobile-menu-button is-open"
+                 data-modal-button
+                 aria-expanded="false">
+                    <svg
+                    width="40"
+                    height="40"
+                     class="icon-menu" aria-label="переключатель мобильного меню">
+                        <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                        <use class="icon-open" href="./images/icons.svg#icon-open"></use>
+
+                    </svg>
+                </button>
+                <div class="content-menu">
+                    Контент-меню
+                </div>
+            </nav>
         <!--contacts-->
-            <!-- <ul class="contacts list">
+            <ul class="contacts list">
                 <li class="contacts_item">
                     <a href="mailto:info@devstudio.com" class="contacts_link link">
                         <svg class="contacts_icon-envelope">
@@ -43,7 +58,7 @@
                 </li>
             </ul>
         </div>
-    </header> -->
+    </header>
     <main>
         <!--hero-->
             <section class="hero">
@@ -440,5 +455,6 @@
     </div>
     <script src="./js/modal.js"></script> -->
     <!-- тимчасово закоментовано для створення форми -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>
