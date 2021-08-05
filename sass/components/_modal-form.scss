@@ -95,7 +95,7 @@
   @extend %align;
   justify-content: center;
   margin-top: 20px;
-  @include font(400, 14px, 24px, 0.03em);
+  @include font(400, 12px, 14px, 0.03em);
   color: #757575;
   &::before {
     display: block;

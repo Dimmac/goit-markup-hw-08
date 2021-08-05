@@ -4,9 +4,12 @@
   max-width: 100%;
   background-color: var(--main-background-color);
 }
-.footer-combine {
-  display: flex;
+@media screen and(min-width: 768px) {
+  .footer-combine {
+    display: flex;
+  }
 }
+
 .footer-basic {
 }
 
@@ -68,6 +71,14 @@
     background-color: var(--theme-textcolor);
   }
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  :not(:last-child) {
+    margin-right: 10px;
+  }
+}
 @media screen and(max-width: 1199px) {
   .footer-combine {
     justify-content: space-between;
@@ -105,11 +116,7 @@
       margin-top: 0;
     }
   }
-  .social-list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
-  }
+
   .join {
     margin-left: 70px;
   }
