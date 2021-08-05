@@ -1,6 +1,10 @@
+.menu {
+}
 .nav-section {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px;
 }
 .nav-section_logo {
   font-family: "Raleway";
@@ -115,47 +119,3 @@
   .nav-section_logo {
   }
 }
-// .mobile-menu-button {
-//   position: absolute;
-//   top: 50%;
-//   right: 0%;
-//   transform: translateY(-50%);
-//   padding: 0;
-//   border: none;
-//   background-color: transparent;
-// }
-// .mobile-menu-button .icon-close {
-//   display: none;
-// }
-// .mobile-menu-button.is-open .icon-close {
-//   display: block;
-// }
-// .mobile-menu-button.is-open .icon-open {
-//   display: none;
-// }
-// .content-menu {
-//   display: none;
-//   position: relative;
-//   top: 100%;
-//   left: 0;
-//   width: 100%;
-//   background-color: violet;
-//   padding: 20px;
-//   text-align: center;
-//   font-size: 20px;
-//   height: 100vh;
-
-//   &.is-open {
-//     display: block;
-//   }
-// }
-// @media screen and(max-width: 767px) {
-//   .menu .container {
-//     position: relative;
-//   }
-// }
-// @media screen and (min-width: $tablet) {
-//   .mobile-menu-button {
-//     display: none;
-//   }
-// }

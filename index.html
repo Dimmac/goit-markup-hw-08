@@ -15,30 +15,52 @@
     <header class="menu">
         <div class="container">
             <nav class="nav-section">
-                <a class="nav-section_logo link" href="index.html"><span lang="en">Web</span><span lang="en"
-                        class="nav-section_header-studio">Studio</span></a>
+                <!-- <a class="nav-section_logo link" href="index.html"><span lang="en">Web</span><span lang="en"
+                        class="nav-section_header-studio">Studio</span></a> -->
                 <ul class="nav-section_list list">
                     <li class="nav-section_item"><a href="" class="nav-section_link current link">Студия</a></li>
                     <li class="nav-section_item"><a href="portfolio.html" class="nav-section_link link">Портфолио</a></li>
                     <li class="nav-section_item"><a href="" class="nav-section_link link">Контакты</a></li>
                 </ul>
-                <!-- <button type="button" class="mobile-menu-button is-open"
-                 data-modal-button
-                 aria-expanded="false"
-                 aria-controls="content-menu"
-                 >
-                    <svg
-                    width="40"
-                    height="40"
-                     class="icon-menu" aria-label="переключатель мобильного меню">
-                        <use class="icon-close" href="./images/icons.svg#icon-close"></use>
-                        <use class="icon-open" href="./images/icons.svg#icon-open"></use>
+                <div class="container-burger">
+                    <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="40" height="40" class="icon-menu" aria-label="переключатель мобильного меню">
+                            <use class="icon-open" href="./images/icons.svg#icon-open"></use>
+                        </svg>
+                    </button>
+                </div>
 
-                    </svg>
-                </button>
-                <div class="content-menu" id="content-menu" data-menu>
-                    Контент-меню
-                </div> -->
+                <div class="menu-container js-menu-container">
+                    <button type="button" class="menu-toggle js-close-menu">
+                        <svg
+                        width="40"
+                        height="40"
+                        class="icon-menu">
+                            <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-list list">
+                        <li class="nav-section_item"><a href="" class="mobile-list-pages current link">Студия</a></li>
+                        <li class="nav-section_item"><a href="portfolio.html" class="mobile-list-pages link">Портфолио</a></li>
+                        <li class="nav-section_item"><a href="" class="mobile-list-pages link">Контакты</a></li>
+                        <li class="contacts_item">
+                            <a href="tel:+380961111111" class="mobile-list-tel link">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="contacts_item">
+                            <a href="mailto:info@devstudio.com" class="mobile-list-mail link">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-social-list list">
+                        <li class="mobile-social"><a href="" class="mobile-social-item link">Instagram</li>
+                        <li class="mobile-social"><a href="" class="mobile-social-item link">Twitter</li>
+                        <li class="mobile-social"><a href="" class="mobile-social-item link">Facebook</li>
+                        <li class="mobile-social"><a href="" class="mobile-social-item link">Telegram</li>
+                    </ul>
+                </div>
             </nav>
         <!--contacts-->
             <ul class="contacts list">
@@ -455,7 +477,12 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
+
+    <!-- <script src="./js/modal.js"></script> -->
     <!-- тимчасово закоментовано для створення форми -->
     <script src="./js/menu.js"></script>
 </body>
