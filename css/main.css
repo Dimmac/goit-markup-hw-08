@@ -136,7 +136,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-top: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--hover-textcolor);
@@ -155,6 +154,12 @@ ul {
 
 .footer-form-input::placeholder {
   color: var(--footer-contacts-textcolor);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form-head {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -423,12 +428,6 @@ ul {
   .menu-toggle:hover, .menu-toggle:focus {
     fill: var(--theme-textcolor);
   }
-  .container-burger {
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
   .menu-container {
     position: fixed;
     top: 0;
@@ -568,6 +567,9 @@ ul {
     display: flex;
     align-items: center;
   }
+  .menu .container {
+    justify-content: space-between;
+  }
   .menu {
     border-bottom: var(--line-color) solid 1px;
   }
@@ -607,12 +609,6 @@ ul {
   .contacts_link:hover, .contacts_link:focus {
     color: var(--theme-textcolor);
   }
-  .contacts {
-    margin-left: auto;
-  }
-  .contacts .contacts_item:not(:last-child) {
-    margin-right: 50px;
-  }
   .contacts_icon-envelope {
     width: 16px;
     height: 12px;
@@ -631,7 +627,6 @@ ul {
     transition-duration: var(--time-transition-duration);
     transition-timing-function: var(--timing-function);
     font-weight: 500;
-    padding: 32px 0px;
   }
 }
 
@@ -654,6 +649,12 @@ ul {
   }
   .nav-section_list {
     margin-left: 93px;
+  }
+  .contacts {
+    margin-left: auto;
+  }
+  .contacts .contacts_item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -1021,7 +1022,7 @@ ul {
 }
 
 .footer-section {
-  padding: 60px 0px;
+  padding: 60px 74px 60px 61px;
   max-width: 100%;
   background-color: var(--main-background-color);
 }
@@ -1074,6 +1075,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .social-list-footer :not(:last-child) {
@@ -1167,7 +1169,6 @@ ul {
 @media screen and (min-width: 768px) {
   .footer-combine {
     display: flex;
-    align-items: baseline;
   }
 }
 

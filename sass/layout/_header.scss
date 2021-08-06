@@ -33,6 +33,9 @@
     display: flex;
     align-items: center;
   }
+  .menu .container {
+    justify-content: space-between;
+  }
   .menu {
     border-bottom: var(--line-color) solid 1px;
   }
@@ -71,12 +74,6 @@
       color: var(--theme-textcolor);
     }
   }
-  .contacts {
-    margin-left: auto;
-    .contacts_item:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
   .contacts_icon-envelope {
     width: 16px;
     height: 12px;
@@ -95,7 +92,7 @@
     transition-duration: var(--time-transition-duration);
     transition-timing-function: var(--timing-function);
     font-weight: 500;
-    padding: 32px 0px;
+    // padding: 32px 0px;
   }
 }
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
@@ -114,8 +111,10 @@
   .nav-section_list {
     margin-left: 93px;
   }
-}
-@media screen and(min-width: $tablet) {
-  .nav-section_logo {
+  .contacts {
+    margin-left: auto;
+    .contacts_item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }

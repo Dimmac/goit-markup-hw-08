@@ -1,5 +1,8 @@
+.footer .container {
+  // align-items: baseline;
+}
 .footer-section {
-  padding: 60px 0px;
+  padding: 60px 74px 60px 61px;
   max-width: 100%;
   background-color: var(--main-background-color);
 }
@@ -43,6 +46,7 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 60px;
   & :not(:last-child) {
     margin-right: 10px;
   }
@@ -126,7 +130,7 @@
 @media screen and(min-width: 768px) {
   .footer-combine {
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
   }
 }
 @media screen and (max-width: 767px) {

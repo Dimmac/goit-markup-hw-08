@@ -1,6 +1,6 @@
 .footer-form-head {
   @include font(700, 14px, 16px, 0.03em);
-  margin-top: 60px;
+  // margin-top: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--hover-textcolor);
@@ -16,6 +16,11 @@
   background-color: inherit;
   &::placeholder {
     color: var(--footer-contacts-textcolor);
+  }
+}
+@media screen and(max-width: 1199px) {
+  .footer-form-head {
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: $desktop) {
