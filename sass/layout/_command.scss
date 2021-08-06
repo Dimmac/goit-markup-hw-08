@@ -17,7 +17,6 @@
   margin-left: var(--card-gap);
 }
 .command-list-item-title {
-  // margin-top: 30px;
   @include font(500, 16px, 19px, 0.03em);
   color: var(--title-textcolor);
 }
@@ -26,7 +25,7 @@
   @include font(400, 16px, 19px, 0.03em);
   color: var(--paragraph-textcolor);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .command-list {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +43,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .command-section {
     padding-top: 94px;
     padding-bottom: 94px;

@@ -1,12 +1,7 @@
-.footer .container {
-  // align-items: baseline;
-}
 .footer-section {
   padding: 60px 74px 60px 61px;
   max-width: 100%;
   background-color: var(--main-background-color);
-}
-.footer-basic {
 }
 .footer-studio {
   color: var(--hover-textcolor);
@@ -82,7 +77,7 @@
     text-align: center;
   }
 }
-@media screen and(min-width: 1200px) {
+@media screen and(min-width: $desktop) {
   .footer-section {
     padding: 60px 0px;
     width: 1600px;
@@ -127,10 +122,9 @@
     }
   }
 }
-@media screen and(min-width: 768px) {
+@media screen and(min-width: $tablet) {
   .footer-combine {
     display: flex;
-    // align-items: baseline;
   }
 }
 @media screen and (max-width: 767px) {

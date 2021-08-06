@@ -1,6 +1,6 @@
 .methods {
   margin-top: 60px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 94px;
   }
 }
@@ -9,12 +9,12 @@
   height: 70px;
 }
 .methods_list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
     // margin-left: calc(-1 * var(--card-gap));
     padding: 0;
@@ -22,13 +22,13 @@
 }
 
 .methods_item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
 
     // flex-basis: 50%;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     .methods_item {
       flex-basis: calc(100% / 4 - var(--card-gap));
       margin-left: var(--card-gap);
@@ -59,122 +59,3 @@
     margin-bottom: 30px;
   }
 }
-
-//
-
-// &:not(:first-child) {
-//     @media screen and (max-width: 479px) {
-//       margin-top: 30px;
-//     }
-//   }
-// width: calc ((100% - 4 * 15px) / 2);
-// margin: 15px;
-
-// @media screen and (min-width: 480px) {
-//   width: 480px;
-//   .container {
-//     background-color: springgreen;
-//   }
-// }
-
-// .methods {
-//   padding-top: 94px;
-// }
-// .methods_list {
-//   display: flex;
-//   margin-left: calc(-1 * var(--card-gap));
-//   padding: 0;
-// }
-// .methods_item {
-//   flex-basis: calc(100% / 4 - var(--card-gap));
-//   margin-left: var(--card-gap);
-// }
-// .methods_title {
-//   @include font(700, 14px, 16px, 0.03em);
-//   text-transform: uppercase;
-//   color: var(--title-textcolor);
-// }
-// .methods_text {
-//   margin-top: 10px;
-//   @include font(400, 14px, 24px, 0.03em);
-//   color: var(--paragraph-textcolor);
-// }
-// .methods_icon {
-//   width: 70px;
-//   height: 70px;
-// }
-// .methods_box {
-//   @extend %align;
-//   justify-content: center;
-//   width: 270px;
-//   height: 120px;
-//   margin-bottom: 30px;
-//   background: var(--command-section-background-color);
-//   border-radius: 4px;
-// }
-
-// .methods_list {
-// }
-// .methods_item {
-//   margin: 0 auto;
-//   // display: inline-block;
-//   // justify-content: center;
-//   // text-align: center;
-// }
-// .methods_item:not(:first-child) {
-//   padding-top: 10px;
-// }
-// .methods_title {
-//   margin: 0 auto;
-//   @include font(700, 14px, 16px, 0.03em);
-//   text-transform: uppercase;
-//   color: var(--title-textcolor);
-// }
-// .methods_text {
-//   @include font(400, 14px, 24px, 0.03em);
-//   color: var(--paragraph-textcolor);
-// }
-
-// .methods_icon {
-//   width: 70px;
-//   height: 70px;
-// }
-// .methods_box {
-//   margin-right: auto;
-//   margin-left: auto;
-//   margin-bottom: 30px;
-//   padding-top: 25px;
-//   padding-bottom: 25px;
-//   background: var(--command-section-background-color);
-//   border-radius: 4px;
-// }
-
-// // 480+
-// @media screen and (min-width: 480px) {
-//   .container {
-//     min-width: 480px;
-//     background-color: turquoise;
-//   }
-// }
-
-// // 768+
-// @media screen and (min-width: 768px) {
-//   .container {
-//     min-width: 768px;
-//     background-color: yellowgreen;
-//     .methods_list {
-//       display: flex;
-//       flex-wrap: wrap;
-//       text-align: center;
-//     }
-//   }
-// }
-
-// // 1200+
-// @media screen and (min-width: 1200px) {
-//   .container {
-//     min-width: 1200px;
-//     margin-top: 94px;
-//     background-color: rgb(205, 50, 128);
-//   }
-// }
