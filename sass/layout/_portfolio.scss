@@ -2,6 +2,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.thumb:not(:last-child) {
+  margin-bottom: 30px;
+}
 .btn-portfolio {
   display: flex;
   margin-bottom: 50px;

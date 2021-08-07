@@ -1,12 +1,10 @@
-.menu {
-}
 .nav-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0px;
 }
 .nav-section_logo {
+  padding: 16px 0px;
   font-family: "Raleway";
   @include font(700, 24px, 28px, 0.03em);
   color: var(--theme-textcolor);
@@ -22,9 +20,8 @@
 }
 
 @media screen and(min-width: $tablet) {
-  .nav-section {
-    padding-top: 26px;
-    padding-bottom: 26px;
+  .nav-section_logo {
+    padding: 26px 0px;
   }
   .contacts_link,
   .nav-section_list,
@@ -93,7 +90,6 @@
     transition-duration: var(--time-transition-duration);
     transition-timing-function: var(--timing-function);
     font-weight: 500;
-    // padding: 32px 0px;
   }
 }
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
@@ -112,10 +108,7 @@
   .nav-section_list {
     margin-left: 93px;
   }
-  .contacts {
-    margin-left: auto;
-    .contacts_item:not(:last-child) {
-      margin-right: 50px;
-    }
+  .contacts_link {
+    margin-left: 30px;
   }
 }

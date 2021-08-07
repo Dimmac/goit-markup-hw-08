@@ -1,4 +1,4 @@
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .menu-toggle {
     position: absolute;
     display: block;
@@ -67,21 +67,19 @@
     }
   }
   .mobile-list-tel {
-    position: absolute;
     bottom: 194px;
     color: #188ce8;
     @include font(500, 34px, 40px, 00.02em);
   }
   .mobile-list-mail {
-    position: absolute;
     bottom: 134px;
     color: var(--paragraph-textcolor);
     @include font(500, 24px, 28px, 00.02em);
   }
   .mobile-social-list {
-    position: absolute;
     bottom: 48px;
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-social-item {
     color: var(--theme-textcolor);
@@ -94,17 +92,35 @@
       color: #188ce8;
     }
   }
-  .mobile-social:not(:first-child) {
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
-    border-right-width: 22px;
-    padding-left: 10px;
-    margin-left: 10px;
+  .mobile-social:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    border-left-width: 22px;
+    padding-right: 10px;
+    margin-right: 10px;
   }
 }
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: 768px) {
   .menu-toggle,
   .mobile-list,
-  .mobile-social-list {
+  .mobile-social-list,
+  .mobile-list-tel,
+  .mobile-list-mail {
     display: none;
   }
+}
+.mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mobile-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.mobile-social-block {
+  margin-top: 64px;
+}
+.mobile-list-mail {
+  margin-top: 32px;
 }
