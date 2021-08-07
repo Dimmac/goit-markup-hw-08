@@ -22,7 +22,7 @@
                     <li class="nav-section_item"><a href="portfolio.html" class="nav-section_link link">Портфолио</a></li>
                     <li class="nav-section_item"><a href="" class="nav-section_link link">Контакты</a></li>
                 </ul>
-                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false">
                     <svg width="40" height="40" class="icon-menu" aria-label="переключатель мобильного меню">
                         <use class="icon-open" href="./images/icons.svg#icon-open"></use>
                     </svg>
@@ -52,10 +52,10 @@
                         </li>
                     </ul>
                     <ul class="mobile-social-list list">
-                        <li class="mobile-social"><a href="" class="mobile-social-item link">Instagram</li>
-                        <li class="mobile-social"><a href="" class="mobile-social-item link">Twitter</li>
-                        <li class="mobile-social"><a href="" class="mobile-social-item link">Facebook</li>
-                        <li class="mobile-social"><a href="" class="mobile-social-item link">Telegram</li>
+                        <li class="mobile-social"><a href="" class="mobile-social-item link">Instagram</a></li>
+                        <li class="mobile-social"><a href="" class="mobile-social-item link">Twitter</a></li>
+                        <li class="mobile-social"><a href="" class="mobile-social-item link">Facebook</a></li>
+                        <li class="mobile-social"><a href="" class="mobile-social-item link">Telegram</a></li>
                     </ul>
                 </div>
             </nav>
@@ -145,17 +145,37 @@
                 <div class="container">
                     <h2 class="tasks-command-title">Чем мы занимаемся</h2>
                         <ul class="tasks-images list">
-                            <li class="tasks-images-item"><img class="gap" src="./images/tasks/box1.jpeg" alt="разрабочик создет програмный код на компьютере" width="370">
+                            <li class="tasks-images-item">
+                                <picture class="picture">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="/images/box/box1.webp 1x, /images/box/box1@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="/images/box/box1.jpg 1x, /images/box/box1@2x.jpg 2x">
+                                    <img src="/images/box/box1.jpg" class="gap" alt="разрабочик создет програмный код на компьютере" width="370">
+                                </picture>
                                 <div class="tasks-text">
                                     <p class="tasks-text-item">Десктопные приложения</p>
                                 </div>
                             </li>
-                            <li class="tasks-images-item"><img class="gap" src="./images/tasks/box2.jpeg" alt="визуализация адаптации отображения приложения на смартфоне" width="370">
+                            <li class="tasks-images-item">
+                                <picture class="picture">
+                                    <source media="(min-width: 1200px)" srcset="/images/box/box2.webp 1x, /images/box/box2@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="/images/box/box2.jpg 1x, /images/box/box2@2x.jpg 2x">
+                                    <img src="/images/box/box2.jpg" class="gap" alt="визуализация адаптации отображения приложения на смартфоне" width="370">
+                                </picture>
                                 <div class="tasks-text">
                                     <p class="tasks-text-item">Мобильные приложения</p>
                                 </div>
                             </li>
-                            <li class="tasks-images-item"><img class="gap" src="./images/tasks/box3.jpeg" alt="работа с выбором цвета на дисплее планшета" width="370">
+                            <li class="tasks-images-item">
+                                <picture class="picture">
+                                    <source media="(min-width: 1200px)" srcset="/images/box/box3.webp 1x, /images/box/box3@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="/images/box/box3.jpg 1x, /images/box/box3@2x.jpg 2x">
+                                    <img src="/images/box/box3.jpg" class="gap" alt="работа с выбором цвета на дисплее планшета"
+                                        width="370">
+                                </picture>
                                 <div class="tasks-text">
                                     <p class="tasks-text-item">Дизайнерские решения</p>
                                 </div>
