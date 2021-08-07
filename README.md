@@ -1,2 +1,3 @@
-# goit-markup-hw-07
-sass and bem
+# goit-markup-hw-08
+
+responsive and adadptive html
