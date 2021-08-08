@@ -3,10 +3,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
-  max-width: 100%;
-  // width: 528px;
-  height: 580px;
+  width: 96vw;
+  max-width: 450px;
   background-color: var(--hover-textcolor);
   padding: 40px;
 }
@@ -28,5 +26,10 @@
   &:hover,
   &:focus {
     fill: var(--theme-textcolor);
+  }
+}
+@media screen and(min-width: $tablet) {
+  .modal {
+    max-width: 528px;
   }
 }

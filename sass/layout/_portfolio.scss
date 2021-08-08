@@ -7,7 +7,11 @@
 }
 .btn-portfolio {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+
+  .btn-portfolio-item {
+    margin-bottom: 15px;
+  }
   .btn-portfolio-item:not(:last-child) {
     margin-right: 8px;
   }
@@ -43,10 +47,8 @@
   color: var(--paragraph-textcolor);
 }
 .thumb-link {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  // display: block;
+  display: block;
   transition-property: box-shadow;
   @extend %transition-order;
   &:hover,
@@ -60,10 +62,9 @@
   }
 }
 .thumb-text {
-  padding: 20px 24px;
+  padding: 20px 0px 20px 24px;
   border: var(--line-color) solid 1px;
   border-top: 0;
-  flex-grow: 1;
 }
 .overlay {
   position: absolute;

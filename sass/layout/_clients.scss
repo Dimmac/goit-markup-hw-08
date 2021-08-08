@@ -35,7 +35,7 @@
   text-align: center;
   color: var(--title-textcolor);
 }
-@media screen and(min-width: $mobile) {
+@media screen and(min-width: $tablet) {
   .clients-list {
     margin: -15px;
     .clients-list-item {

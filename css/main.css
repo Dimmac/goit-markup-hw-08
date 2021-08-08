@@ -143,6 +143,7 @@ ul {
 
 .footer-form-input {
   width: 100%;
+  max-width: 450px;
   padding: 15px 0px 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -239,9 +240,8 @@ ul {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
-  max-width: 100%;
-  height: 580px;
+  width: 96vw;
+  max-width: 450px;
   background-color: var(--hover-textcolor);
   padding: 40px;
 }
@@ -263,6 +263,12 @@ ul {
 
 .close-btn:hover, .close-btn:focus {
   fill: var(--theme-textcolor);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .modal-form {
@@ -441,6 +447,7 @@ ul {
     transform: translateX(100%);
     transition-duration: var(--time-transition-duration);
     transition-timing-function: var(--timing-function);
+    opacity: 0;
   }
   .menu-container.is-open {
     transform: translateX(0);
@@ -448,6 +455,7 @@ ul {
     transition-timing-function: var(--timing-function);
     background-color: #fff;
     padding: 48px 40px;
+    opacity: 1;
   }
   .mobile-close-button {
     position: absolute;
@@ -690,39 +698,37 @@ ul {
   max-width: 1600px;
 }
 
-@media screen and (min-width: 280px) {
-  .hero {
-    background-image: url("../../images/mobile/bg-main_mobile.jpg");
-  }
+.hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/bg-main_mobile.jpg");
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), (min-resolution: 192dpi) and (min-width: 280px), (min-resolution: 2dppx) and (min-width: 280px) {
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../images/mobile/bg-main_mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/bg-main_mobile@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../../images/tablet/bg-main_tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/bg-main_tablet.jpg");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url("../../images/tablet/bg-main_tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/bg-main_tablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("../../images/desktop/bg-main_desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/bg-main_desktop.jpg");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url("../../images/desktop/bg-main_desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/../images/desktop/bg-main_desktop@2x.jpg");
   }
 }
 
@@ -954,7 +960,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .command-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1036,7 +1042,7 @@ ul {
   color: var(--title-textcolor);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .clients-list {
     margin: -15px;
   }
@@ -1157,6 +1163,8 @@ ul {
 @media screen and (max-width: 1199px) {
   .footer-combine {
     justify-content: space-between;
+    margin-right: 89px;
+    margin-left: 76px;
   }
   .footer-section .container {
     text-align: center;
@@ -1237,7 +1245,11 @@ ul {
 
 .btn-portfolio {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+.btn-portfolio .btn-portfolio-item {
+  margin-bottom: 15px;
 }
 
 .btn-portfolio .btn-portfolio-item:not(:last-child) {
@@ -1286,9 +1298,8 @@ ul {
 }
 
 .thumb-link {
-  display: flex;
-  flex-direction: column;
   height: 100%;
+  display: block;
   transition-property: box-shadow;
 }
 
@@ -1302,10 +1313,9 @@ ul {
 }
 
 .thumb-text {
-  padding: 20px 24px;
+  padding: 20px 0px 20px 24px;
   border: var(--line-color) solid 1px;
   border-top: 0;
-  flex-grow: 1;
 }
 
 .overlay {

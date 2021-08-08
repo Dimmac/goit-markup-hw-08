@@ -18,17 +18,56 @@
                 <a class="nav-section_logo link" href="index.html"><span lang="en">Web</span><span lang="en"
                         class="nav-section_header-studio">Studio</span></a>
                 <ul class="nav-section_list list">
-                    <li class="nav-section_item"><a href="index.html" class="nav-section_link link">Студия</a></li>
-                    <li class="nav-section_item"><a href="" class="nav-section_link current link">Портфолио</a></li>
+                    <li class="nav-section_item"><a href="index.html" class="nav-section_link current link">Студия</a></li>
+                    <li class="nav-section_item"><a href="" class="nav-section_link link">Портфолио</a></li>
                     <li class="nav-section_item"><a href="" class="nav-section_link link">Контакты</a></li>
                 </ul>
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false">
+                    <svg width="40" height="40" class="icon-menu" aria-label="переключатель мобильного меню">
+                        <use class="icon-open" xlink:href="./images/icons.svg#icon-open"></use>
+                    </svg>
+                </button>
+                <div class="menu-container js-menu-container">
+                    <button type="button" class="menu-toggle js-close-menu">
+                        <svg width="40" height="40" class="icon-menu">
+                            <use class="icon-close" xlink:href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile-wrapper">
+                        <div class="mobile-nav">
+                            <ul class="mobile-list list">
+                                <li class="nav-section_item"><a href="" class="mobile-list-pages current link">Студия</a>
+                                </li>
+                                <li class="nav-section_item"><a href="portfolio.html"
+                                        class="mobile-list-pages link">Портфолио</a></li>
+                                <li class="nav-section_item"><a href="" class="mobile-list-pages link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-contacts">
+                            <a href="tel:+380961111111" class="mobile-list-tel link">
+                                +38 096 111 11 11
+                            </a>
+                            <a href="mailto:info@devstudio.com" class="mobile-list-mail link">
+                                info@devstudio.com
+                            </a>
+                        </div>
+                        <div class="mobile-social-block">
+                            <ul class="mobile-social-list list">
+                                <li class="mobile-social"><a href="" class="mobile-social-item link">Instagram</a></li>
+                                <li class="mobile-social"><a href="" class="mobile-social-item link">Twitter</a></li>
+                                <li class="mobile-social"><a href="" class="mobile-social-item link">Facebook</a></li>
+                                <li class="mobile-social"><a href="" class="mobile-social-item link">Telegram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
             <!--contacts-->
             <ul class="contacts list">
                 <li class="contacts_item">
                     <a href="mailto:info@devstudio.com" class="contacts_link link">
                         <svg class="contacts_icon-envelope">
-                            <use href="./images/icons.svg#icon-envelope"></use>
+                            <use xlink:href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
@@ -36,7 +75,7 @@
                 <li class="contacts_item">
                     <a href="tel:+380961111111" class="contacts_link link">
                         <svg class="contacts_icon-smartphone">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
+                            <use xlink:href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
                     </a>
@@ -347,28 +386,28 @@
                         <li class="social-list-item-footer">
                             <a href="" class="social-list-link-footer">
                                 <svg class="icon-social-link">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list-item-footer">
                             <a href="" class="social-list-link-footer">
                                 <svg class="icon-social-link">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                    <use xlink:href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list-item-footer">
                             <a href="" class="social-list-link-footer">
                                 <svg class="icon-social-link">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                    <use xlink:href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list-item-footer">
                             <a href="" class="social-list-link-footer">
                                 <svg class="icon-social-link">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                    <use xlink:href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
@@ -381,15 +420,17 @@
                     <input type="text" class="footer-form-input" name="user-post" placeholder="E-mail" required>
                     <button type="submit" class="footer-form-button">Подписаться
                         <svg class="icon-footer-form">
-                            <use>
-                            </use>
                         </svg>
                     </button>
                 </div>
             </form>
         </div>
     </footer>
+        <script src="./js/modal.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script src="./js/mobile-menu.js"></script>
 </body>
-
 </html>
 

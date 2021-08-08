@@ -32,6 +32,7 @@
     transform: translateX(100%);
     transition-duration: var(--time-transition-duration);
     transition-timing-function: var(--timing-function);
+    opacity: 0;
   }
   .menu-container.is-open {
     transform: translateX(0);
@@ -39,6 +40,7 @@
     transition-timing-function: var(--timing-function);
     background-color: #fff;
     padding: 48px 40px;
+    opacity: 1;
   }
   .mobile-close-button {
     position: absolute;
