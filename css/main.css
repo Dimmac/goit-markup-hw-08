@@ -386,6 +386,7 @@ ul {
 }
 
 .modal-form-checkbox-label {
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
   font-weight: 400;
@@ -694,8 +695,8 @@ ul {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   max-width: 1600px;
+  max-width: 100%;
 }
 
 .hero {

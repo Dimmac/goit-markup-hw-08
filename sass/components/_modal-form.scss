@@ -93,6 +93,7 @@
 }
 .modal-form-checkbox-label {
   @extend %align;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
   @include font(400, 12px, 14px, 0.03em);
